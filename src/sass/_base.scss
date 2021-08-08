@@ -1,0 +1,38 @@
+$color-primary: hsl(7, 99%, 70%);
+$color-secondary: hsl(51, 100%, 49%);
+$white: hsl(0, 0%, 100%);
+
+$text-accent-green: hsl(167, 40%, 24%);
+$text-accent-blue: hsl(198, 62%, 26%);
+
+$text-footer: hsl(168, 34%, 41%);
+
+$color-grey-dark-2: hsl(212, 27%, 19%);
+$color-grey-dark-1: hsl(213, 9%, 39%);
+$color-grey-light-1: hsl(232, 10%, 55%);
+$color-grey-light-2: hsl(210, 4%, 67%);
+
+$bp-small: 37.5em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: $color-grey-dark-1;
+}
+
+.mb-m {
+  margin-bottom: 3rem;
+}

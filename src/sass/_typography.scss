@@ -1,0 +1,87 @@
+%heading {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 6rem;
+  color: $white;
+  letter-spacing: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  @extend %heading;
+  color: $color-grey-dark-2;
+  font-size: 4rem;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 3rem;
+
+  &--blue {
+    color: $text-accent-blue;
+  }
+  &--green {
+    color: $text-accent-green;
+  }
+}
+
+.heading-4 {
+  @extend %heading;
+  color: $color-grey-light-2;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+.paragraph {
+  line-height: 1.4;
+  &--bold {
+    font-weight: 600;
+  }
+  &--blue {
+    color: $text-accent-blue;
+  }
+  &--green {
+    color: $text-accent-green;
+  }
+}
+
+.more-link {
+  position: relative;
+  font-family: 'Fraunces', serif;
+  color: $color-grey-dark-2;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: max-content;
+
+  &::after {
+    position: absolute;
+    bottom: -0.2rem;
+    left: -1rem;
+    content: '';
+    height: 1rem;
+    width: 0;
+    background-color: $color-secondary;
+    z-index: -1;
+    border-radius: 9999px;
+    transition: width 0.2s ease-out;
+  }
+
+  &:hover::after {
+    width: calc(100% + 2rem);
+  }
+
+  &--red:hover::after,
+  &--red::after {
+    background-color: $color-primary;
+  }
+}

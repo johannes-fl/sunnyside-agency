@@ -3,11 +3,340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="src/sass/main.scss" />
-    <script type="module" src="src/js/controller.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <!-- <script type="module" src="src/js/controller.js"></script> -->
 
     <title>Sunnyside agency landing page</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__navigation">
+        <a class="header__logo" href="#">
+          <img src="./images/logo.svg" alt="Logo sunnyside" />
+        </a>
+        <div class="nav-icon"></div>
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Project</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--btn">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="heading-1">We Are Creatives</h1>
+      <a href="#about" class="header__arrow">
+        <img
+          src="./images/icon-arrow-down.svg"
+          alt="Arrow down"
+          class="header__arrow"
+        />
+      </a>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <article class="about__article">
+          <div class="about__content">
+            <h2 class="heading-2">Transform your brand</h2>
+            <p class="paragraph">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#" class="more-link">Learn more</a>
+          </div>
+          <picture class="about__img">
+            <source
+              srcset="./images/desktop/image-transform.jpg"
+              media="(min-width: 600px)"
+            />
+            <source srcset="./images/mobile/image-transform.jpg" />
+            <img
+              src="./images/desktop/image-transform.jpg"
+              alt="Pic Transform"
+            />
+          </picture>
+        </article>
+
+        <article class="about__article">
+          <picture class="about__img">
+            <source
+              srcset="./images/desktop/image-stand-out.jpg"
+              media="(min-width: 600px)"
+            />
+            <source srcset="./images/mobile/image-stand-out.jpg" />
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              alt="Pic Stand Out"
+            />
+          </picture>
+
+          <div class="about__content">
+            <h2 class="heading-2">Stand out to the right audience</h2>
+            <p class="paragraph">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#" class="more-link more-link--red">Learn more</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="services" id="services">
+        <article class="services__article">
+          <picture class="services__img">
+            <source
+              srcset="./images/desktop/image-graphic-design.jpg"
+              media="(min-width: 600px)"
+            />
+            <source srcset="./images/mobile/image-graphic-design.jpg" />
+            <img
+              src="./images/desktop/image-graphic-design.jpg"
+              alt="Pic Graphic Design"
+            />
+          </picture>
+          <div class="services__content">
+            <h3 class="heading-3 heading-3--green mb-m">Graphic design</h3>
+            <p class="paragraph paragraph--green paragraph--bold">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </article>
+        <article class="services__article">
+          <picture class="services__img">
+            <source
+              srcset="./images/desktop/image-photography.jpg"
+              media="(min-width: 600px)"
+            />
+            <source srcset="./images/mobile/image-photography.jpg" />
+            <img
+              src="./images/desktop/image-photography.jpg"
+              alt="Pic Graphic Design"
+            />
+          </picture>
+          <div class="services__content">
+            <h3 class="heading-3 heading-3-blue mb-m">Photography</h3>
+            <p class="paragraph paragraph--blue paragraph--bold">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="testimonials">
+        <h4 class="heading-4">Client Testimonials</h4>
+        <div class="testimonials__container">
+          <article class="testimonials__article">
+            <img
+              class="testimonials__img"
+              src="./images/image-emily.jpg"
+              alt="Emily R. - Marketing director"
+            />
+            <p class="paragraph">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="testimonials__name">Emily R.</p>
+            <p class="testimonials__position">Marketing Director</p>
+          </article>
+
+          <article class="testimonials__article">
+            <img
+              class="testimonials__img"
+              src="./images/image-thomas.jpg"
+              alt="Thomas S. - Chief Operating Office"
+            />
+            <p class="paragraph">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="testimonials__name">Thomas S.</p>
+            <p class="testimonials__position">Chief Operating Office</p>
+          </article>
+
+          <article class="testimonials__article">
+            <img
+              class="testimonials__img"
+              src="./images/image-jennie.jpg"
+              alt="Jennie F. - Busoness Owner"
+            />
+            <p class="paragraph">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <p class="testimonials__name">Jennie F.</p>
+            <p class="testimonials__position">Business Owner</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="projects__card">
+          <div class="projects__card-front">
+            <picture>
+              <source
+                srcset="./images/desktop/image-gallery-milkbottles.jpg"
+                media="(min-width: 600px)"
+              />
+              <source srcset="./images/mobile/image-gallery-milkbottles.jpg" />
+              <img
+                src="./images/desktop/image-gallery-milkbottles.jpg"
+                alt="Milkbottles"
+              />
+            </picture>
+          </div>
+          <div class="projects__card-back">
+            <h3 class="heading-3">Dairy Milk</h3>
+            <p class="paragraph">
+              Check out this great new style of drinking milk!
+            </p>
+            <a href="#" class="more-link more-link--external">Preview site</a>
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <div class="projects__card-front">
+            <picture>
+              <source
+                srcset="./images/desktop/image-gallery-orange.jpg"
+                media="(min-width: 600px)"
+              />
+              <source srcset="./images/mobile/image-gallery-orange.jpg" />
+              <img
+                src="./images/desktop/image-gallery-orange.jpg"
+                alt="Oranges"
+              />
+            </picture>
+          </div>
+          <div class="projects__card-back">
+            <h3 class="heading-3">Fairange</h3>
+            <p class="paragraph">
+              Fair trade oranges - delicious and affordable
+            </p>
+            <a href="#" class="more-link more-link--external">Preview site</a>
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <div class="projects__card-front">
+            <picture>
+              <source
+                srcset="./images/desktop/image-gallery-cone.jpg"
+                media="(min-width: 600px)"
+              />
+              <source srcset="./images/mobile/image-gallery-cone.jpg" />
+              <img src="./images/desktop/image-gallery-cone.jpg" alt="Cone" />
+            </picture>
+          </div>
+          <div class="projects__card-back">
+            <h3 class="heading-3">ConeFactory</h3>
+            <p class="paragraph">Selfmade and yummy: cones from Coney Island</p>
+            <a href="#" class="more-link more-link--external">Preview site</a>
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <div class="projects__card-front">
+            <picture>
+              <source
+                srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+                media="(min-width: 600px)"
+              />
+              <source srcset="./images/mobile/image-gallery-sugar-cubes.jpg" />
+              <img
+                src="./images/desktop/image-gallery-sugarcubes.jpg"
+                alt="Sugarcubes"
+              />
+            </picture>
+          </div>
+          <div class="projects__card-back">
+            <h3 class="heading-3">Sugar Zero</h3>
+            <p class="paragraph">
+              Believe it or not - these sugar cubes are completely fat free!
+            </p>
+            <a href="#" class="more-link more-link--external">Preview site</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img
+        class="logo logo--green"
+        src="./images/logo.svg"
+        alt="Logo sunnyside"
+      />
+      <nav class="nav-footer">
+        <ul class="nav-footer__items">
+          <li class="nav-footer__item">
+            <a href="#" class="nav-footer__link">About</a>
+            <a href="#" class="nav-footer__link">Services</a>
+            <a href="#" class="nav-footer__link">Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav-social">
+        <ul class="nav-social__items">
+          <li class="nav-social__item">
+            <a href="#" class="nav-social__item">
+              <img src="./images/icon-facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+
+          <li class="nav-social__item">
+            <a href="#" class="nav-social__item">
+              <img src="./images/icon-instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+
+          <li class="nav-social__item">
+            <a href="#" class="nav-social__item">
+              <img src="./images/icon-twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+
+          <li class="nav-social__item">
+            <a href="#" class="nav-social__item">
+              <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef"
+          target="_blank"
+          rel="noopener"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.conducto.de" target="_blank" rel="noopener"
+          >Yo-Fly</a
+        >.
+      </div>
+    </footer>
+  </body>
 </html>
