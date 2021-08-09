@@ -33,13 +33,13 @@
         <div class="nav-icon"></div>
         <nav class="nav">
           <ul class="nav__items">
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="link">About</a></li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Services</a>
+              <a href="#" class="link">Services</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Project</a></li>
+            <li class="nav__item"><a href="#" class="link">Project</a></li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--btn">Contact</a>
+              <a href="#" class="link link--btn">Contact</a>
             </li>
           </ul>
         </nav>
@@ -79,7 +79,7 @@
         </article>
 
         <article class="about__article">
-          <picture class="about__img">
+          <picture class="about__img about__img--order">
             <source
               srcset="./images/desktop/image-stand-out.jpg"
               media="(min-width: 600px)"
@@ -196,7 +196,7 @@
       <section id="projects" class="projects">
         <div class="projects__card">
           <div class="projects__card-front">
-            <picture>
+            <picture class="projects__img">
               <source
                 srcset="./images/desktop/image-gallery-milkbottles.jpg"
                 media="(min-width: 600px)"
@@ -208,18 +208,18 @@
               />
             </picture>
           </div>
-          <div class="projects__card-back">
+          <div class="projects__card-back projects__card-back--1">
             <h3 class="heading-3">Dairy Milk</h3>
             <p class="paragraph">
               Check out this great new style of drinking milk!
             </p>
-            <a href="#" class="more-link more-link--external">Preview site</a>
+            <a href="#" class="link link--btn">Preview site</a>
           </div>
         </div>
 
         <div class="projects__card">
           <div class="projects__card-front">
-            <picture>
+            <picture class="projects__img">
               <source
                 srcset="./images/desktop/image-gallery-orange.jpg"
                 media="(min-width: 600px)"
@@ -231,18 +231,18 @@
               />
             </picture>
           </div>
-          <div class="projects__card-back">
+          <div class="projects__card-back projects__card-back--2">
             <h3 class="heading-3">Fairange</h3>
             <p class="paragraph">
               Fair trade oranges - delicious and affordable
             </p>
-            <a href="#" class="more-link more-link--external">Preview site</a>
+            <a href="#" class="link link--btn">Preview site</a>
           </div>
         </div>
 
         <div class="projects__card">
           <div class="projects__card-front">
-            <picture>
+            <picture class="projects__img">
               <source
                 srcset="./images/desktop/image-gallery-cone.jpg"
                 media="(min-width: 600px)"
@@ -251,16 +251,16 @@
               <img src="./images/desktop/image-gallery-cone.jpg" alt="Cone" />
             </picture>
           </div>
-          <div class="projects__card-back">
-            <h3 class="heading-3">ConeFactory</h3>
+          <div class="projects__card-back projects__card-back--3">
+            <h3 class="heading-3">Cone Factory</h3>
             <p class="paragraph">Selfmade and yummy: cones from Coney Island</p>
-            <a href="#" class="more-link more-link--external">Preview site</a>
+            <a href="#" class="link link--btn">Preview site</a>
           </div>
         </div>
 
         <div class="projects__card">
           <div class="projects__card-front">
-            <picture>
+            <picture class="projects__img">
               <source
                 srcset="./images/desktop/image-gallery-sugarcubes.jpg"
                 media="(min-width: 600px)"
@@ -272,28 +272,30 @@
               />
             </picture>
           </div>
-          <div class="projects__card-back">
+          <div class="projects__card-back projects__card-back--4">
             <h3 class="heading-3">Sugar Zero</h3>
             <p class="paragraph">
               Believe it or not - these sugar cubes are completely fat free!
             </p>
-            <a href="#" class="more-link more-link--external">Preview site</a>
+            <a href="#" class="link link--btn">Preview site</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <img
-        class="logo logo--green"
-        src="./images/logo.svg"
-        alt="Logo sunnyside"
-      />
+      <svg class="footer__logo">
+        <use xlink:href="images/sprite.svg#logo" />
+      </svg>
       <nav class="nav-footer">
         <ul class="nav-footer__items">
           <li class="nav-footer__item">
             <a href="#" class="nav-footer__link">About</a>
+          </li>
+          <li class="nav-footer__item">
             <a href="#" class="nav-footer__link">Services</a>
+          </li>
+          <li class="nav-footer__item">
             <a href="#" class="nav-footer__link">Projects</a>
           </li>
         </ul>
@@ -302,25 +304,33 @@
         <ul class="nav-social__items">
           <li class="nav-social__item">
             <a href="#" class="nav-social__item">
-              <img src="./images/icon-facebook.svg" alt="Facebook" />
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-facebook" />
+              </svg>
             </a>
           </li>
 
           <li class="nav-social__item">
             <a href="#" class="nav-social__item">
-              <img src="./images/icon-instagram.svg" alt="Instagram" />
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-instagram" />
+              </svg>
             </a>
           </li>
 
           <li class="nav-social__item">
             <a href="#" class="nav-social__item">
-              <img src="./images/icon-twitter.svg" alt="Twitter" />
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-twitter" />
+              </svg>
             </a>
           </li>
 
           <li class="nav-social__item">
             <a href="#" class="nav-social__item">
-              <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-pinterest" />
+              </svg>
             </a>
           </li>
         </ul>

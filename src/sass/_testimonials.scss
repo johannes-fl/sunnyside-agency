@@ -1,12 +1,20 @@
 .testimonials {
   padding: 12rem 10rem;
 
+  @media only screen and (max-width: $bp-small) {
+    padding: 6rem 5rem;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
     padding: 5vw 0;
     text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+    }
   }
 
   &__article {
@@ -15,6 +23,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &:not(:first-child) {
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 4rem;
+      }
+    }
   }
 
   &__img {
@@ -23,6 +37,10 @@
     width: 8rem;
     margin-bottom: 6rem;
     margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 2rem;
+    }
   }
 
   &__name {
@@ -30,6 +48,10 @@
     font-family: 'Fraunces', serif;
     color: $color-grey-dark-2;
     margin-bottom: 0.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 2rem;
+    }
   }
 
   &__position {

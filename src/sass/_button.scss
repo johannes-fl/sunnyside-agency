@@ -1,0 +1,78 @@
+.link {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: $white;
+
+  &:after {
+    content: '';
+    background-color: $white;
+    height: 2px;
+    width: 0px;
+
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.2s ease-out;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    color: $color-grey-dark-1;
+  }
+}
+
+.link--btn {
+  display: inline-block;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: $white;
+  color: $color-grey-dark-2;
+  padding: 1.5rem 3rem;
+  border-radius: 99999px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.8s linear, color 0.8s linear;
+
+  &:after {
+    content: unset;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 30rem;
+    top: 0;
+    left: -200%;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    border-radius: 9999px;
+
+    background: linear-gradient(
+      90deg,
+      rgba(250, 212, 0, 0.6) 0%,
+      rgba(254, 120, 103, 0.6) 100%
+    );
+    transform: skewX(-10deg);
+    transition: left 0.5s linear;
+  }
+
+  &:hover {
+    background: rgba($white, 0.6);
+    color: white;
+    transition: background 0.4s linear, color 0.4s linear;
+  }
+
+  &:hover:before {
+    left: 200%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.2rem;
+  }
+}

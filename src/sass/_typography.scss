@@ -25,6 +25,7 @@ body {
 .heading-3 {
   @extend %heading;
   font-size: 3rem;
+  color: $color-grey-dark-2;
 
   &--blue {
     color: $text-accent-blue;

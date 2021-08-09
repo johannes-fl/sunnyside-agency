@@ -1,10 +1,13 @@
 $color-primary: hsl(7, 99%, 70%);
 $color-secondary: hsl(51, 100%, 49%);
+$color-tertiary: hsl(198, 98%, 65%);
+$color-fourth: hsl(36, 100%, 50%);
 $white: hsl(0, 0%, 100%);
 
 $text-accent-green: hsl(167, 40%, 24%);
 $text-accent-blue: hsl(198, 62%, 26%);
 
+$color-footer: hsl(167, 48%, 74%);
 $text-footer: hsl(168, 34%, 41%);
 
 $color-grey-dark-2: hsl(212, 27%, 19%);
@@ -12,7 +15,9 @@ $color-grey-dark-1: hsl(213, 9%, 39%);
 $color-grey-light-1: hsl(232, 10%, 55%);
 $color-grey-light-2: hsl(210, 4%, 67%);
 
-$bp-small: 37.5em;
+$bp-large: 68.75em; // 1100px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
 
 *,
 *::before,
@@ -26,6 +31,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
