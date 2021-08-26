@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Sunnyside Agency](./screenshot.png)
 
 ### Links
 
