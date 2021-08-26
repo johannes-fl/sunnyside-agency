@@ -41,5 +41,11 @@
       align-items: center;
       text-align: center;
     }
+
+    &--order-2 {
+      @media only screen and (max-width: $bp-small) {
+        order: 2;
+      }
+    }
   }
 }

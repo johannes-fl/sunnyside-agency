@@ -14,6 +14,14 @@ body {
   letter-spacing: 1rem;
   line-height: 1;
   text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  animation: animateHeading 1s 0.5s forwards;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
 }
 
 .heading-2 {
@@ -84,5 +92,19 @@ body {
   &--red:hover::after,
   &--red::after {
     background-color: $color-primary;
+  }
+}
+
+@keyframes animateHeading {
+  0% {
+    transform: scaleX(5);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
   }
 }

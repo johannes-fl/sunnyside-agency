@@ -19,8 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <!-- <script type="module" src="src/js/controller.js"></script> -->
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script type="module" src="src/js/controller.js"></script>
 
     <title>Sunnyside agency landing page</title>
   </head>
@@ -30,14 +30,18 @@
         <a class="header__logo" href="#">
           <img src="./images/logo.svg" alt="Logo sunnyside" />
         </a>
-        <div class="nav-icon"></div>
+        <div class="nav-icon__container">
+          <div class="nav-icon"></div>
+        </div>
         <nav class="nav">
           <ul class="nav__items">
-            <li class="nav__item"><a href="#" class="link">About</a></li>
+            <li class="nav__item"><a href="#about" class="link">About</a></li>
             <li class="nav__item">
-              <a href="#" class="link">Services</a>
+              <a href="#services" class="link">Services</a>
             </li>
-            <li class="nav__item"><a href="#" class="link">Project</a></li>
+            <li class="nav__item">
+              <a href="#projects" class="link">Project</a>
+            </li>
             <li class="nav__item">
               <a href="#" class="link link--btn">Contact</a>
             </li>
@@ -56,7 +60,7 @@
     <main>
       <section class="about" id="about">
         <article class="about__article">
-          <div class="about__content">
+          <div class="about__content about__content--order-2">
             <h2 class="heading-2">Transform your brand</h2>
             <p class="paragraph">
               We are a full-service creative agency specializing in helping
@@ -79,7 +83,7 @@
         </article>
 
         <article class="about__article">
-          <picture class="about__img about__img--order">
+          <picture class="about__img">
             <source
               srcset="./images/desktop/image-stand-out.jpg"
               media="(min-width: 600px)"

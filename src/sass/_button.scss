@@ -38,6 +38,11 @@
   overflow: hidden;
   transition: background 0.8s linear, color 0.8s linear;
 
+  @media only screen and (max-width: $bp-small) {
+    background-color: $color-secondary;
+    padding: 2rem 3rem;
+  }
+
   &:after {
     content: unset;
   }
@@ -60,19 +65,26 @@
     );
     transform: skewX(-10deg);
     transition: left 0.5s linear;
+
+    @media only screen and (max-width: $bp-small) {
+      all: initial;
+    }
   }
 
   &:hover {
     background: rgba($white, 0.6);
     color: white;
     transition: background 0.4s linear, color 0.4s linear;
+
+    @media only screen and (max-width: $bp-small) {
+      text-decoration: underline;
+      transition: none;
+      background-color: $color-secondary;
+      color: $color-grey-dark-2;
+    }
   }
 
   &:hover:before {
     left: 200%;
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    font-size: 1.2rem;
   }
 }
