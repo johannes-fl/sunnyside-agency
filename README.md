@@ -10,11 +10,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -35,8 +31,6 @@ Users should be able to:
 
 - Solution URL: [Add solution URL here](https://github.com/johannes-fl/sunnyside-agency)
 - Live Site URL: [Add live site URL here](https://festive-hugle-bbc262.netlify.app/)
-
-## My process
 
 ### Built with
 
