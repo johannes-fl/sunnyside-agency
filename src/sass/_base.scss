@@ -45,3 +45,13 @@ body {
 .mb-m {
   margin-bottom: 3rem;
 }
+
+.design {
+  width: 100%;
+  position: absolute;
+  opacity: 0.3;
+}
+
+*:focus {
+  outline: 0.5rem dashed $color-grey-dark-2;
+}

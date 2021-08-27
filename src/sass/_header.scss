@@ -1,11 +1,11 @@
 .header {
   background-image: url(../../images/desktop/image-header.jpg);
-  background-position: center;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
-  height: 100vh;
+  height: 121vh;
   text-align: center;
 
   display: flex;
@@ -14,7 +14,7 @@
   overflow-x: hidden;
 
   & > *:not(:first-child) {
-    margin-top: 13vh;
+    margin-top: 11.5vh;
   }
 
   @media only screen and (max-width: $bp-small) {
@@ -37,6 +37,10 @@
 
   &__logo {
     margin-right: auto;
+
+    & img {
+      width: 15rem;
+    }
   }
 
   &__arrow {
@@ -65,7 +69,7 @@
       }
 
       & > *:not(:first-child) {
-        margin-left: 2rem;
+        margin-left: 3.5rem;
 
         @media only screen and (max-width: $bp-small) {
           margin-left: 0;
@@ -112,6 +116,8 @@
   .nav-icon__container {
     padding: 1rem 0;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 
   .nav-icon {

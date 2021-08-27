@@ -28,6 +28,7 @@
 .link--btn {
   display: inline-block;
   font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
   background-color: $white;
@@ -50,7 +51,7 @@
   &:before {
     content: '';
     position: absolute;
-    width: 30rem;
+    width: 25rem;
     top: 0;
     left: -200%;
     right: 0;

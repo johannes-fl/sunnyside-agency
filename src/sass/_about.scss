@@ -1,5 +1,4 @@
 .about {
-  overflow-x: hidden;
   &__article {
     display: flex;
 
@@ -27,7 +26,7 @@
 
   &__content {
     flex: 0 0 50%;
-    padding: 10%;
+    padding: 7em 5em;
 
     display: flex;
     flex-direction: column;
