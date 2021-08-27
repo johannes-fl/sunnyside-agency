@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/johannes-fl/sunnyside-agency)
-- Live Site URL: [Add live site URL here](https://festive-hugle-bbc262.netlify.app/)
+- Solution URL: [https://github.com/johannes-fl/sunnyside-agency](https://github.com/johannes-fl/sunnyside-agency)
+- Live Site URL: [https://festive-hugle-bbc262.netlify.app/](https://festive-hugle-bbc262.netlify.app/)
 
 ### Built with
 
