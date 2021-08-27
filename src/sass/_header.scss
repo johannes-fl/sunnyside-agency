@@ -1,11 +1,11 @@
 .header {
   background-image: url(../../images/desktop/image-header.jpg);
-
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
-  height: 121vh;
+  padding-bottom: 11.5vh;
+  height: 100vh;
   text-align: center;
 
   display: flex;
@@ -20,6 +20,7 @@
   @media only screen and (max-width: $bp-small) {
     background-image: url(../../images/mobile/image-header.jpg);
     background-attachment: scroll;
+    height: initial;
   }
 
   /* Fix für iPads*/
